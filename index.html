@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE HTML>
 
 <head>
@@ -95,4 +96,103 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 
+=======
+<!DOCTYPE HTML>
+
+<head>
+	<title>Local Weather</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<form id="zipChange">
+			<input placeholder="Enter Zip" type="number" id="zipInput" required />
+			<button type="submit">Go</button>
+		</form>
+
+		<div id="localWeather">
+			<h1>Local Weather&nbsp;</h1>
+      <div id="tempButtons">
+			<button type="button" class="btn btn-link btn-lg" id="fahrenheit">Fahrenheit</button>
+			<span>|</span>
+			<button type="button" class="btn btn-link btn-lg" id="celsius">Celsius</button>
+      </div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 location">
+				<span>Current Conditions for</span></br>
+				<span class="locationName"></span>
+			</div>
+		</div>
+		<div class="row conditionsRow">
+			<div class="col-xs-3 conditionsLeft">
+				<div id="conditionIconDiv">
+				</div>
+				<span id="currentConditions" style="padding-left: 20px;"></span>
+			</div>
+			<div class="col-xs-6 conditionsRight">
+				<ul style="list-style: none;">
+					<li><strong>Humidity:</strong>&nbsp;<span id="humidity"></span></li>
+					<li><strong>Wind Speed:</strong>&nbsp;<span id="wind"></span></li>
+					<li><strong>Dewpoint:</strong>&nbsp;<span id="dewpoint"></span></li>
+					<li><strong>Visibility:</strong>&nbsp;<span id="visibility"></span></li>
+					<li><strong>Feels Like:</strong>&nbsp;<span id="feelsLike"></span></li>
+					<li><strong>UV Index:</strong>&nbsp;<span id="uvIndex"></span></li>
+				</ul>
+			</div>
+			<div class="col-xs-3">
+				<div id="weatherUndergroundIcon">
+				</div>
+			</div>
+		</div>
+		<div class="row extendedRow">
+			<div class="col-xs-12 extended">
+				<span>Extended Forecast for</span></br>
+				<span class="locationName"></span>
+			</div>
+		</div>
+		<div class="row extendedForecastRow">
+			<div class="col-xs-3 extendedForecast" id="dayOne">
+				<span class="day"></span>
+				<div class="extendedForecastImageDiv"></div>
+				<div class="extendedConditions"></div>
+				<span class="highTemp"></span>
+				<span class="lowTemp"></span>
+			</div>
+			<div class="col-xs-3 extendedForecast" id="dayTwo">
+				<span class="day"></span>
+				<div class="extendedForecastImageDiv"></div>
+				<div class="extendedConditions"></div>
+				<span class="highTemp"></span>
+				<span class="lowTemp"></span>
+			</div>
+			<div class="col-xs-3 extendedForecast" id="dayThree">
+				<span class="day"></span>
+				<div class="extendedForecastImageDiv"></div>
+				<div class="extendedConditions"></div>
+				<span class="highTemp"></span>
+				<span class="lowTemp"></span>
+			</div>
+			<div class="col-xs-3 extendedForecast" id="dayFour">
+				<span class="day"></span>
+				<div class="extendedForecastImageDiv"></div>
+				<div class="extendedConditions"></div>
+				<span class="highTemp"></span>
+				<span class="lowTemp"></span>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+>>>>>>> origin/master
 </html>
